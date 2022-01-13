@@ -61,7 +61,7 @@ color: #828282;
     position: absolute;
     width:274px;
     height:61px;
-    
+    left: 236px;
     top:628px;
     bottom:351px;
     background: #D6E2FF;
@@ -109,4 +109,7 @@ color: #828282;
         height:60%;
     
      }
-   
+    #row-buttalk{
+        display:grid;
+        grid-column-gap: 0.25rem;
+    }
