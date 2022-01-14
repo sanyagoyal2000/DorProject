@@ -10,38 +10,46 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 600,
+  width: 550,
   height:400,
   bgcolor: '#FFFFFF ',
   border: '2px solid #FFAFAF',
   boxShadow: 24,
   p: 4,
   borderRadius: '1%',
-  flexGrow: 1
+  flexGrow: 1,
+  justifyContent: 'center'
 };
 
 export default function Vent2() {
   
   
   return (
-    <div>
+    <div className="modal-content">
       
         <Box sx={style}>
-        <Grid container spacing={3}>
-        <Grid item xs={5}>
+        <Grid container spacing={6} >
+        <Grid item xs={5} className="upper">
+        <div className="figure">
         <img className="modal-img"  src='./images/Vent-Headphones.svg' alt='am'></img>
-        <p>Listener<span className="ic"><HelpOutlineRoundedIcon color="action"/></span></p>
+        </div>
+        <p className="mh">Listener<span className="ic"><HelpOutlineRoundedIcon color="action"/></span></p>
         </Grid>
-        <Grid item xs={2}>
-        <hr id="line"/>
+        <Grid item xs='auto'>
+            <div id="line">
+        <img id="lines" src='./images/line.png' alt='am'></img>
+        </div>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={5} className="upper">
+        <div className="figure">
         <img className="modal-img" src='./images/Vent-Mic.svg' alt='am'></img>
-        <p>Speaker<HelpOutlineRoundedIcon className="ic" color="action"/></p>
+        </div>
+        <p className="mh">Speaker<HelpOutlineRoundedIcon className="ic" color="action"/></p>
         </Grid>
-        
-        <Grid item xs={6}>
-        <button id="modalb">Get Started</button> 
+        </Grid>
+        <Grid container spacing={6}>
+        <Grid item xs="auto" className="lower">
+        <button id="modalb"><span id="bm">Get Started</span></button> 
         </Grid>
       </Grid>
         </Box>
