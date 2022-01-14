@@ -10,9 +10,9 @@ img{
 	height: 100%;
 }
 #vent-content{
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
-	position:relative;
+	
 	background: linear-gradient(11.49deg, #FFD6D6 59.9%, #FFFFFF 99.02%, #FFFFFF 99.03%);
 }
 #back{
@@ -32,18 +32,17 @@ img{
 position: absolute;
 width: 347px;
 height: 24px;
-left: 236px;
-top: 200px;
+left: 15%;
+top:23%;
 font-weight: 700;
-font-style: normal;
 font-size: 5.5vw;
 }
 .vc{
 position: absolute;
 width: 720px;
 height: 160px;
-left: 248px;
-top: 413px;
+left: 15%;
+top: 38%;
 
 font-family: Montserrat;
 font-style: normal;
@@ -61,9 +60,8 @@ color: #828282;
 position: absolute;
 width:274px;
 height:61px;
-left: 236px;
-top:628px;
-bottom:351px;
+left: 15%;
+top: 63%;
 background: #FFAFAF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 5.85px;
@@ -104,8 +102,8 @@ color: #000000;
  #imag img{
     position:absolute;
     
-    left:460px;
-    top: 23.9%;
-    height:55%;
+    left:30%;
+    top: 15%;
+    height:60%;
 
  }

@@ -1,0 +1,27 @@
+
+ 
+.modal-img{
+height:100px;
+
+}
+
+.line{
+position: absolute;
+background-color:#FFC3BD;
+height: 325px;
+border: 1px solid #FFC3BD;
+-webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+#modalb{
+background: #FFAFAF;
+border-radius: 5.85px;
+height: 61px;
+width: 274px;
+align-items: center;
+
+}
+.ic{
+    margin-top:3px;
+}

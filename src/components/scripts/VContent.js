@@ -1,13 +1,22 @@
-import React from 'react';
 import '../styles/vent1.css'
 import '../styles/boxrowv.css'
+import { useState } from "react";
+import React from 'react';
+import Modal from '@material-ui/core/Modal';
+import Button from '@material-ui/core/Button';
+import Vent2 from './vent2.js';
+
 function VContent() {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (
-        
+        <React.Fragment>
         <div id="vent-content">
             <div id="back">
-                <img src="./images/Vector.png" alt='am'></img>
+                <img src="./images/Vector.png" alt='amoeba'></img>
             </div>
+            
             <div id="front">
                 <div id="inner">
             <div id="content">
@@ -18,10 +27,22 @@ function VContent() {
                     <p className="vc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. </p>
                 </div>
                 <div>
-                    <button id="ventb"><span id="but">Get Started</span></button>
+                    <button id="ventb"onClick={handleOpen}
+        ><span id="but">Get Started</span></button>
+        <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+          <Vent2/>
+      </Modal>
+        
                 </div>
 
+
             </div>
+            
             <div>
               
               <div id="imag">
@@ -47,7 +68,7 @@ function VContent() {
             </div>
         </div>
        
-      
+        </React.Fragment>
     )
 }
 

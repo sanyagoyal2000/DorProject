@@ -17,16 +17,20 @@ function TContent() {
                 <div>
                     <p className="vc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. </p>
                 </div>
-                <div>
-                    <button className="talkbutton"><span id="but">Get Started</span></button>
+                <div id="row-buttalk">
+                    <div><button className="talkbutton"><span id="but">Get Started</span></button>
                     
                 </div>
+                <div>
+                    <button className="talkbutton"><span id="but">Personality Test</span></button>
+                    
+                </div></div>
 
             </div>
             <div>
               
-              <div id="imag">
-              <img src="./images/ventmain.svg" alt='am'></img>
+              <div id="imagt">
+              <img src="./images/talk1.png" alt='am'></img>
               </div>
             </div>
             </div>

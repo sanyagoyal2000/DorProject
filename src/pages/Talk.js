@@ -3,10 +3,10 @@ import Navbar from '../components/scripts/navbar.js';
 import TContent from '../components/scripts/Tcontent.js';
 function Talk() {
     return (
-        <React.Fragment>
+        <div>
             <Navbar/>
           <TContent/>
-        </React.Fragment>
+        </div>
     )
 }
 
