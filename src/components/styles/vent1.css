@@ -11,8 +11,8 @@ img{
 }
 #vent-content{
 	width: 100vw;
-	height: 100vh;
-	
+	height: 100%;
+	position: relative;
 	background: linear-gradient(11.49deg, #FFD6D6 59.9%, #FFFFFF 99.02%, #FFFFFF 99.03%);
 }
 #back{
@@ -29,7 +29,7 @@ img{
 	height: 100%;
 }
 #header{
-position: absolute;
+position: relative;
 width: 347px;
 height: 24px;
 left: 15%;

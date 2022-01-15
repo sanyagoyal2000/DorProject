@@ -1,8 +1,8 @@
 #box-row{
     display: grid;
-    background-color:red;
+   
     position:absolute;
-    
+    grid-auto-flow: row;
 
 }
 .small1{
@@ -43,7 +43,7 @@ box-sizing: border-box;
 border-radius: 20px;
 }
 .title{
-position: absolute;
+position: relative;
 top:-38px;
 right:64px;
 font-family: Montserrat;

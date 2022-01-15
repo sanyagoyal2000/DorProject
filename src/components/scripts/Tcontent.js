@@ -18,11 +18,11 @@ function TContent() {
                     <p className="vc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia. </p>
                 </div>
                 <div id="row-buttalk">
-                    <div><button className="talkbutton"><span id="but">Get Started</span></button>
+                    <div><button className="talkbutton"><span id="butb">Get Started</span></button>
                     
                 </div>
                 <div>
-                    <button className="talkbutton"><span id="but">Personality Test</span></button>
+                    <button className="talkbutton"><span id="butb">Personality Test</span></button>
                     
                 </div></div>
 
