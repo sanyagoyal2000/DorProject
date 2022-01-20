@@ -33,54 +33,48 @@
     font-weight: 700;
     font-size: 5.5vw;
 }
-vc{
-    position: absolute;
-    width: 720px;
-    height: 160px;
-    left: 15%;
-    top: 38%;
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 40px;
-    /* or 222% */
-    
-    letter-spacing: -0.015em;
-    
-    color: #828282;
-    }
+.vc{
+	position: relative;width: 720px;
+height: 160px;
+left: 35%;
+top:-350%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 40px;
+/* or 222% */
+
+letter-spacing: -0.015em;
+
+color: #828282;
+}
 
 .talkbutton{
     position: relative;
     width:274px;
     height:61px;
-    left: 65%;
+    left: 60%;
     top: -300px;
     background: #D6E2FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5.85px;
     border-color:transparent;
+    align-items: center;
+justify-content: center;
 
     }
     #butb{
-    position:absolute;
-    left: 25.17%;
-    right: 23.84%;
-    top: 22%;
-    bottom: 22%;
-    
+    position:relative;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: -0.015em;
-    
     color: #000000;
     }
     
@@ -101,12 +95,13 @@ vc{
         
         left:58%;
         top: 5%;
-        height:87%;
+        height:85%;
         width:44%;
     
      }
     #row-buttalk{
+        margin-top:-150px;
         display:grid;
-        gap: 3em;
+       
         grid-template-columns:50% auto;
     }

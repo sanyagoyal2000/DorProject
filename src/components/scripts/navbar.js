@@ -11,16 +11,11 @@ function Navbar(props){
 	const [openl, setOpenl] = useState(false);
 	const [opens, setOpens] = useState(false);
 	
-    const [open, setOpen] = useState(false);
-   const handleOpen = () => setOpen(true);
-   const handleLogin = () =>{
-	   setOpenl(true);
-	   handleOpen();
-   }
-   const handleSign = () => {
-	   setOpens(true);
-       handleOpen();
-   }
+  
+   const handleLogin = () =>setOpenl(true);
+   
+   const handleSign = () => setOpens(true);
+    
     const handleClosel = () => setOpenl(false);
 	const handleCloses = () => setOpens(false);
 
