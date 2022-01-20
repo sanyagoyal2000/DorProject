@@ -4,12 +4,26 @@ import Login from './Login.js';
 import Signup from './Signup.js';
 import Modal from '@material-ui/core/Modal';
 
+
 import '../styles/navbar.css'
 import {Link} from "react-router-dom";
 function Navbar(props){
-	const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+	const [openl, setOpenl] = useState(false);
+	const [opens, setOpens] = useState(false);
+	
+    const [open, setOpen] = useState(false);
+   const handleOpen = () => setOpen(true);
+   const handleLogin = () =>{
+	   setOpenl(true);
+	   handleOpen();
+   }
+   const handleSign = () => {
+	   setOpens(true);
+       handleOpen();
+   }
+    const handleClosel = () => setOpenl(false);
+	const handleCloses = () => setOpens(false);
+
 	function toggleMenuBar(){
 		let icon = document.getElementById('hamburger');
 		let navbar = document.getElementById('second-navbar');
@@ -68,24 +82,26 @@ function Navbar(props){
 					</ul>
 				</div>
 				<div id='account'>
-				<button onClick={handleOpen}> Log In <Modal
-        open={open}
-        onClose={handleClose}
+				<button onClick={handleLogin}> Log In </button>
+				
+				<Modal
+        open={openl}
+        onClose={handleClosel}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-		  <Login/>
-	  </Modal></button>
+		  <Login/></Modal>
+	
+	
 				
-				<button onClick={handleOpen}> Register<Modal
-        open={open}
-        onClose={handleClose}
+				<button onClick={handleSign} > Register </button>
+				<Modal
+        open={opens}
+        onClose={handleCloses}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-		  <Signup/>
-	  </Modal> </button>
-				
+		  <Signup/></Modal>
 					<i class="fas fa-bars" id='hamburger' onClick={toggleMenuBar} data-state='closed'></i>
 				</div>
 
@@ -118,26 +134,27 @@ function Navbar(props){
 						<Link to="/talk">User Safety</Link>
 						</li>
 						<li className='sn-nav-link'>
-						<button onClick={handleOpen}> Log In </button>
+						<button onClick={handleLogin}> Log In </button>
+				
 				<Modal
-        open={open}
-        onClose={handleClose}
+        open={openl}
+        onClose={handleClosel}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-		  <Login/>
-	  </Modal>
-						</li>
-						<li className='sn-nav-link'>
-						<button onClick={handleOpen}> Register </button>
+		  <Login/></Modal>
+	
+	</li>
+	<li className='sn-nav-link'>
+				<button onClick={handleSign} > Register </button>
 				<Modal
-        open={open}
-        onClose={handleClose}
+        open={opens}
+        onClose={handleCloses}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-		  <Signup/>
-	  </Modal>
+		  <Signup/></Modal>
+				
 						</li>
 					</ul>
 				</div>

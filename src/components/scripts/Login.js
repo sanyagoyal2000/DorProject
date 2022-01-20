@@ -18,7 +18,7 @@ const style = {
     justifyContent: 'center'
   };
  
-function Login() {
+function Login({open}) {
 
    
     return (
