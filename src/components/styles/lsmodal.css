@@ -1,0 +1,274 @@
+.modal-heading{
+ position:relative;
+width: 277.7px;
+height: 41.86px;
+left:10px;
+top:95px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+letter-spacing: -0.015em;
+color: #924A3C;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.b-text{
+   
+width: 243.33px;
+height: 50px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.bdiv{
+    display:flex;
+    flex-direction:row;
+}
+.activeb{
+    position: relative;
+width: 342px;
+height: 50px;
+
+top:10%;
+background: #FFE2BF;
+border:transparent;
+align-items: center;
+justify-content: center;
+}
+.inactiveb{
+    position: relative;
+    border:transparent;
+width: 342px;
+height: 50px;
+
+top:10%;
+background: #FFFFFF;
+align-items: center;
+justify-content: center;
+}
+.divc{
+    display:flex;
+    flex-direction: column;
+    top:100px;
+    position:relative;
+    margin-top:2px;
+}
+.w-l-input{
+    height: 40px;
+width: 342px;
+left: 468px;
+
+border-radius: 15px;
+border:transparent;
+
+}
+::placeholder { 
+    
+    opacity: 1; 
+    padding:8px;
+  }
+.i2{
+    margin-top:10px;
+}
+.p1{
+position: relative;
+width: 342px;
+height: 22px;
+top: 112px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+text-align: right;
+letter-spacing: -0.015em;
+color: #828282;
+}
+.w-m-input{
+    height: 40px;
+width: 162.85714721679688px;
+left: 468px;
+top: 426px;
+border-radius: 15px;
+border:transparent;
+}
+.w-s-input{
+    height: 39px;
+width: 117.8319320678711px;
+left: 692.1680603027344px;
+top: 619.0000305175781px;
+border-radius: 15px;
+border:transparent;
+}
+.w-xs-input{
+    height: 40px;
+width: 60.35293960571289px;
+left: 542.7226867675781px;
+top: 618.0000305175781px;
+border-radius: 15px;
+border:transparent;
+}
+
+.finalb{
+    background: #FFD5A4;
+    height: 40px;
+    width: 130px;
+    top:200px;
+    left:100px;
+    border-radius: 6px;
+    position:relative;
+    border:transparent;
+}
+
+input[type=checkbox] {
+    background: rgba(255, 213, 164, 1);
+}
+#rm{
+    
+width: 314px;
+height: 22px;
+
+margin-left:3px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+
+
+
+letter-spacing: -0.015em;
+
+color: #828282;
+}
+
+.finalbt{
+position: relative;
+font-family: Montserrat;
+font-weight: 500;
+font-size: 15px;
+text-align: center;
+letter-spacing: -0.015em;
+color: #263238;
+
+}
+#cp{
+    position:relative;
+    top:130px;
+    left:10px;
+}
+#ll{
+    position:relative;
+width: 206px;
+height: 12px;
+left: 66px;
+top: 210px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+text-decoration-line: underline;
+
+color: #828282;
+}
+#log{
+    position: relative;
+    height:250%;
+    width:150%;
+    left:-70px;
+    top:-50px;
+}
+#sig{
+    position: relative;
+    height:250%;
+    width:130%;
+    left:-70px;
+    top:-80px;
+}
+.right{
+  position:absolute;
+}
+.divr1{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    
+    top:90px;
+    left:0px;
+}
+.divr2{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    padding:10px;
+    top:104px;
+    left:0px;
+    padding:4px;
+}
+.finalbs{
+    background: #FFD5A4;
+    height: 40px;
+    width: 130px;
+    top:160px;
+    left:100px;
+    border-radius: 6px;
+    position:relative;
+    border:transparent;
+
+}
+#cps{
+    position:relative;
+    top:105px;
+    left:10px;
+}
+#cpsp{
+    position: relative;
+width: 314px;
+height: 22px;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 8px;
+line-height: 10px;
+letter-spacing: -0.015em;
+
+color: #828282;
+}
+
+#sp{
+    position: relative;
+width: 219px;
+height: 12px;
+top:180px;
+left:50px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+text-decoration-line: underline;
+
+color: #828282;
+}
+
+.btp{
+    color:rgb(0, 0, 0);
+    
+}

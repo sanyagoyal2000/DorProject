@@ -1,8 +1,15 @@
 import React, {useEffect} from 'react';
+import { useState } from "react";
+import Login from './Login.js';
+import Signup from './Signup.js';
+import Modal from '@material-ui/core/Modal';
+
 import '../styles/navbar.css'
 import {Link} from "react-router-dom";
 function Navbar(props){
-
+	const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 	function toggleMenuBar(){
 		let icon = document.getElementById('hamburger');
 		let navbar = document.getElementById('second-navbar');
@@ -61,8 +68,24 @@ function Navbar(props){
 					</ul>
 				</div>
 				<div id='account'>
-					<button> Log In </button>
-					<button> Register </button>
+				<button onClick={handleOpen}> Log In <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+		  <Login/>
+	  </Modal></button>
+				
+				<button onClick={handleOpen}> Register<Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+		  <Signup/>
+	  </Modal> </button>
+				
 					<i class="fas fa-bars" id='hamburger' onClick={toggleMenuBar} data-state='closed'></i>
 				</div>
 
@@ -95,10 +118,26 @@ function Navbar(props){
 						<Link to="/talk">User Safety</Link>
 						</li>
 						<li className='sn-nav-link'>
-							<button> Log In </button>
+						<button onClick={handleOpen}> Log In </button>
+				<Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+		  <Login/>
+	  </Modal>
 						</li>
 						<li className='sn-nav-link'>
-							<button> Register </button>
+						<button onClick={handleOpen}> Register </button>
+				<Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+		  <Signup/>
+	  </Modal>
 						</li>
 					</ul>
 				</div>
