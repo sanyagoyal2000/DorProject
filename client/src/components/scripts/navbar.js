@@ -8,6 +8,7 @@ import Modal from '@material-ui/core/Modal';
 import '../styles/navbar.css'
 import {Link} from "react-router-dom";
 function Navbar(props){
+	
 	const [openl, setOpenl] = useState(false);
 	const [opens, setOpens] = useState(false);
 	

@@ -2,7 +2,10 @@
 import Home from './pages/Home.js';
 import Vent from './pages/Vent.js';
 import Talk from './pages/Talk.js';
-import Trial  from './pages/trial.js';
+import Trial  from './pages/trial.js'
+import Profile  from './pages/profile.js';
+import Dashboard  from './pages/Dashboard.js';
+
 import Login from './components/scripts/Login.js';
 import Signup from './components/scripts/Signup.js';
 
@@ -17,7 +20,8 @@ function App() {
         <Route path="/trial" element={<Trial/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
-
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/dash" element={<Dashboard/>}/>
       </Routes>
 
     </Router>
